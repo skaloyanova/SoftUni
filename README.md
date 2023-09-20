@@ -1,1 +1,1 @@
-# SoftUni
+# SoftUni projects and homework
