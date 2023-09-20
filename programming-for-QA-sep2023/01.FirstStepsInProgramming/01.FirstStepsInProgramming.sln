@@ -7,19 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Cinema", "01.Cinema\01.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.SummerClothing", "02.SummerClothing\02.SummerClothing.csproj", "{B59D2119-95E2-4910-BF14-C38F90716071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.NewHome", "03.NewHome\03.NewHome.csproj", "{00152EF8-F836-43CE-8C22-36DF4224575A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.NewHome", "03.NewHome\03.NewHome.csproj", "{00152EF8-F836-43CE-8C22-36DF4224575A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FishingBoat", "04.FishingBoat\04.FishingBoat.csproj", "{C9E9AF0A-0D59-41E1-A7D2-2374CC60C528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.FishingBoat", "04.FishingBoat\04.FishingBoat.csproj", "{C9E9AF0A-0D59-41E1-A7D2-2374CC60C528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Journey", "05.Journey\05.Journey.csproj", "{12111A04-3483-4577-8D5F-1CF15DA8CC78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Journey", "05.Journey\05.Journey.csproj", "{12111A04-3483-4577-8D5F-1CF15DA8CC78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Operations", "06.Operations\06.Operations.csproj", "{40D5C135-2A25-4BE0-871E-673537011FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Operations", "06.Operations\06.Operations.csproj", "{40D5C135-2A25-4BE0-871E-673537011FCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.HotelRoom", "07.HotelRoom\07.HotelRoom.csproj", "{26633151-198E-4913-82BF-24E8D4AB4B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.HotelRoom", "07.HotelRoom\07.HotelRoom.csproj", "{26633151-198E-4913-82BF-24E8D4AB4B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.OnTimeForExam", "08.OnTimeForExam\08.OnTimeForExam.csproj", "{B9087ED5-660D-498F-A1B4-5C1A9DA00C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.OnTimeForExam", "08.OnTimeForExam\08.OnTimeForExam.csproj", "{B9087ED5-660D-498F-A1B4-5C1A9DA00C71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SkiHoliday", "09.SkiHoliday\09.SkiHoliday.csproj", "{11D95946-774F-47F5-825C-731FAD3C8325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.SkiHoliday", "09.SkiHoliday\09.SkiHoliday.csproj", "{11D95946-774F-47F5-825C-731FAD3C8325}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

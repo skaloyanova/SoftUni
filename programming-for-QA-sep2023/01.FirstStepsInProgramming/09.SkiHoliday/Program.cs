@@ -9,13 +9,13 @@
             double presidentApartment = 235.00;
 
             int days = int.Parse(Console.ReadLine());   //range [0...365]
-            string room = Console.ReadLine();           //"room for one person", "apartment" or "president apartment"
+            string roomType = Console.ReadLine();           //"room for one person", "apartment" or "president apartment"
             string assessment = Console.ReadLine();     //"positive" or "negative"
 
             double roomPrice = 0;
             double discount = 0;
 
-            switch (room)
+            switch (roomType)
             {
                 case "room for one person":
                     roomPrice = onePersonRoom;
