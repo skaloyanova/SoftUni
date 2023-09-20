@@ -7,6 +7,7 @@
             int temperature = int.Parse(Console.ReadLine());
             string timeOfDay = Console.ReadLine();
 
+
             string clothing = "";
             string shoes = "";
 

@@ -12,6 +12,7 @@
             int rows = int.Parse(Console.ReadLine());
             int cols = int.Parse(Console.ReadLine());
 
+
             double ticketPrice = 1;
 
             switch (type)
