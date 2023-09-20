@@ -4,9 +4,8 @@
     {
         static void Main(string[] args)
         {
-            string season = "";
-
             int budget = int.Parse(Console.ReadLine());
+            string season = "";
             season = Console.ReadLine();
             int fishermenCount = int.Parse(Console.ReadLine());
 

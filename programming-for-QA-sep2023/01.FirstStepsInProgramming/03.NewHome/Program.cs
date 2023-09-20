@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            double roses = 5.00;
-            double dahlias = 3.80;
-            double tulips = 2.80;
-            double narcissus = 3.00;
-            double gladiolus = 2.50;
+            double rosesPrice= 5.00;
+            double dahliasPrice = 3.80;
+            double tulipsPrice = 2.80;
+            double narcissusPrice = 3.00;
+            double gladiolusPrice = 2.50;
 
             string flowersType = Console.ReadLine();
             int flowersCount = int.Parse(Console.ReadLine());
@@ -19,35 +19,35 @@
             switch (flowersType)
             {
                 case "Roses":
-                    cost = flowersCount * roses;
+                    cost = flowersCount * rosesPrice;
                     if (flowersCount > 80)
                     {
                         cost = cost * 0.9;
                     }
                     break;
                 case "Dahlias":
-                    cost = flowersCount * dahlias;
+                    cost = flowersCount * dahliasPrice;
                     if (flowersCount > 90)
                     {
                         cost = cost * 0.85;
                     }
                     break;
                 case "Tulips":
-                    cost = flowersCount * tulips;
+                    cost = flowersCount * tulipsPrice;
                     if (flowersCount > 80)
                     {
                         cost = cost * 0.85;
                     }
                     break;
                 case "Narcissus":
-                    cost = flowersCount * narcissus;
+                    cost = flowersCount * narcissusPrice;
                     if (flowersCount < 120)
                     {
                         cost = cost * 1.15;
                     }
                     break;
                 case "Gladiolus":
-                    cost = flowersCount * gladiolus;
+                    cost = flowersCount * gladiolusPrice;
                     if (flowersCount < 80)
                     {
                         cost = cost * 1.2;

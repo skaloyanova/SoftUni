@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            double premiere = 12.00;
-            double normal = 7.50;
-            double discount = 5.00;
+            double premierePrice = 12.00;
+            double normalPrice = 7.50;
+            double discountedPrice = 5.00;
 
             string type = Console.ReadLine();
             int rows = int.Parse(Console.ReadLine());
@@ -16,9 +16,9 @@
 
             switch (type)
             {
-                case "Premiere": ticketPrice = premiere; break;
-                case "Normal": ticketPrice = normal; break;
-                case "Discount": ticketPrice = discount; break;
+                case "Premiere": ticketPrice = premierePrice; break;
+                case "Normal": ticketPrice = normalPrice; break;
+                case "Discount": ticketPrice = discountedPrice; break;
             }
 
             double revenue = rows * cols * ticketPrice;
