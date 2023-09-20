@@ -1,4 +1,4 @@
-﻿namespace _01.NumbersFromOneToN
+﻿namespace _02.OneToNreversed
 {
     internal class Program
     {
@@ -6,7 +6,7 @@
         {
             int n = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= n; i++)
+            for (int i = n; i > 0; i--)
             {
                 Console.WriteLine(i);
             }

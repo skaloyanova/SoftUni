@@ -1,4 +1,4 @@
-﻿namespace _01.NumbersFromOneToN
+﻿namespace _03.OneToNstep3
 {
     internal class Program
     {
@@ -6,7 +6,7 @@
         {
             int n = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i += 3)
             {
                 Console.WriteLine(i);
             }
