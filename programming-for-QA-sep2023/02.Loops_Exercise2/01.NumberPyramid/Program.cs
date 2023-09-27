@@ -6,6 +6,8 @@
         {
             int n = int.Parse(Console.ReadLine());
 
+            //variant 1
+            /**/
             int printNum = 1;
             bool exitLoop = false;
 
@@ -27,6 +29,26 @@
                 }
                 Console.WriteLine();
             }
+            /**/
+
+            //variant 2
+            /*
+            int row = 1;
+            int col = 1;
+
+            for (int printNum = 1; printNum <= n ; printNum++)
+            {
+                Console.Write(printNum + " ");
+                col++;
+
+                if (col > row)
+                {
+                    Console.WriteLine();
+                    row++;
+                    col = 1;
+                }
+            }
+            */
         }
     }
 }

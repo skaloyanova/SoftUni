@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/programming-for-QA-sep2023/01-1.ConditionalStatements/01-1.ConditionalStatements.sln
+/programming-for-QA-sep2023/01-2.ComplexConditionalStatements/01-2.ComplexConditionalStatements.sln
+/programming-for-QA-sep2023/WebApp
+/programming-for-QA-sep2023/Test
+/programming-for-QA-sep2023/01-1.ConditionalStatements
+/programming-for-QA-sep2023/01-2.ComplexConditionalStatements
