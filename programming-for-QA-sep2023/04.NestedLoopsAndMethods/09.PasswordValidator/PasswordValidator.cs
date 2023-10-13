@@ -23,7 +23,7 @@ namespace _09.PasswordValidator
             bool isOnlyLettersDigitsValid = validatePasswordIsOnlyLettersDigits(password);
             bool isMinTwoDigitsValid = validatePasswordIsMinTwoDigits(password);
 
-            if (isLengthValid && isMinTwoDigitsValid && isMinTwoDigitsValid)
+            if (isLengthValid && isOnlyLettersDigitsValid && isMinTwoDigitsValid)
             {
                 sb.AppendLine("Password is valid");
             }
@@ -63,7 +63,7 @@ namespace _09.PasswordValidator
                     return false;
                 }
             }
-            
+
             return true;
         }
 
@@ -71,16 +71,36 @@ namespace _09.PasswordValidator
         {
             int digitCount = 0;
 
-            for (int i = 0; i < text.Length; i++)
+            // VAR 1
+
+            //for (int i = 0; i < text.Length; i++)
+            //{
+            //    string currentSymbol = "" + text[i];
+            //    try
+            //    {
+            //        int.Parse(currentSymbol);
+            //        digitCount++;
+            //    }
+            //    catch (Exception)
+            //    {
+            //    }
+
+            //    if (digitCount == 2)
+            //    {
+            //        return true;
+            //    }
+            //}
+
+            //return false;
+
+
+            // VAR 2
+
+            foreach (char c in text)
             {
-                string currentSymbol = "" + text[i];
-                try
+                if (Char.IsDigit(c))
                 {
-                    int.Parse(currentSymbol);
                     digitCount++;
-                }
-                catch (Exception)
-                {
                 }
 
                 if (digitCount == 2)
@@ -90,6 +110,23 @@ namespace _09.PasswordValidator
             }
 
             return false;
+
+
+            // VAR 3
+            //foreach (char c in text)
+            //{
+            //    if (c >= 48 && c <= 57) //ASCII code
+            //    {
+            //        digitCount++;
+            //    }
+
+            //    if (digitCount == 2)
+            //    {
+            //        return true;
+            //    }
+            //}
+
+            //return false;
         }
     }
 }
