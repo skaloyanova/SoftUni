@@ -13,14 +13,14 @@
             {
                 return;
             }
-            long division = getFactorial(n1) / getFactorial(n2);
+            long division = GetFactorial(n1) / GetFactorial(n2);
 
             // OUTPUT - Print the result of the division
             Console.WriteLine(division);
         }
 
         // METHOD
-        static long getFactorial(int n)
+        static long GetFactorial(int n)
         {
             long fact = 1;
 
@@ -38,7 +38,7 @@
             }
             else
             {
-                return n * getFactorial(n - 1);
+                return n * GetFactorial(n - 1);
             }
             */
         }

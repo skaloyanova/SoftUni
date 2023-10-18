@@ -8,11 +8,11 @@
             string text = Console.ReadLine();
 
             // OUTPUT
-            Console.WriteLine(countVowels(text));
+            Console.WriteLine(CountVowels(text));
         }
 
         // METHOD
-        static int countVowels(string text)
+        static int CountVowels(string text)
         {
             int count = 0;
             text = text.ToLower();

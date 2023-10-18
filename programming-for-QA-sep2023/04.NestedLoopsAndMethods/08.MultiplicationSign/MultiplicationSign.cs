@@ -12,9 +12,9 @@
             // LOGIC + OUTPUT - Find and print if num1 * num2 * num3 (the product) is negative, positive or zero. Do this WITHOUT multiplying the three numbers.
             int negativeCount = 0;
 
-            string signNum1 = getNumberSign(num1);
-            string signNum2 = getNumberSign(num2);
-            string signNum3 = getNumberSign(num3);
+            string signNum1 = GetNumberSign(num1);
+            string signNum2 = GetNumberSign(num2);
+            string signNum3 = GetNumberSign(num3);
 
             if (signNum1 == "zero" || signNum2 == "zero" || signNum3 == "zero")
             {
@@ -49,7 +49,7 @@
         }
 
         // METHOD
-        static string getNumberSign(int num)
+        static string GetNumberSign(int num)
         {
             if (num < 0)
             {

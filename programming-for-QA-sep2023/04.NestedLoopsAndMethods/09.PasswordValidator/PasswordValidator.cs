@@ -19,9 +19,9 @@ namespace _09.PasswordValidator
             // LOGIC
             StringBuilder sb = new StringBuilder();
 
-            bool isLengthValid = validatePasswordLength(password);
-            bool isOnlyLettersDigitsValid = validatePasswordIsOnlyLettersDigits(password);
-            bool isMinTwoDigitsValid = validatePasswordIsMinTwoDigits(password);
+            bool isLengthValid = ValidatePasswordLength(password);
+            bool isOnlyLettersDigitsValid = ValidatePasswordIsOnlyLettersDigits(password);
+            bool isMinTwoDigitsValid = ValidatePasswordIsMinTwoDigits(password);
 
             if (isLengthValid && isOnlyLettersDigitsValid && isMinTwoDigitsValid)
             {
@@ -49,12 +49,12 @@ namespace _09.PasswordValidator
         }
 
         // METHODs
-        static bool validatePasswordLength(string text)
+        static bool ValidatePasswordLength(string text)
         {
             return text.Length >= 6 && text.Length <= 10;
         }
 
-        static bool validatePasswordIsOnlyLettersDigits(string text)
+        static bool ValidatePasswordIsOnlyLettersDigits(string text)
         {
             for (int i = 0; i < text.Length; i++)
             {
@@ -67,7 +67,7 @@ namespace _09.PasswordValidator
             return true;
         }
 
-        static bool validatePasswordIsMinTwoDigits(string text)
+        static bool ValidatePasswordIsMinTwoDigits(string text)
         {
             int digitCount = 0;
 
