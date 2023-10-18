@@ -5,26 +5,26 @@ string b = Console.ReadLine();
 
 
 //OUTPUT
-Console.WriteLine(getBiggest(type, a, b));
+Console.WriteLine(GetBiggest(type, a, b));
 
 //METHODs
-string getBiggest (string type, string a, string b)
+string GetBiggest (string type, string a, string b)
 {
     switch (type)
     {
         case "int":
-            return getBiggestInt(int.Parse(a), int.Parse(b)).ToString();
+            return GetBiggestInt(int.Parse(a), int.Parse(b)).ToString();
             break;
         case "char":
-            return getBiggestChar(char.Parse(a), char.Parse(b)).ToString();
+            return GetBiggestChar(char.Parse(a), char.Parse(b)).ToString();
             break;
         case "string":
-            return getBiggestString(a, b);
+            return GetBiggestString(a, b);
             break;
         default: return ""; break;
     }
 }
-int getBiggestInt (int a, int b)
+int GetBiggestInt (int a, int b)
 {
 	if (a > b)
 	{
@@ -36,7 +36,7 @@ int getBiggestInt (int a, int b)
 	}
 }
 
-char getBiggestChar (char a, char b)
+char GetBiggestChar (char a, char b)
 {
     if (a > b)
     {
@@ -48,7 +48,7 @@ char getBiggestChar (char a, char b)
     }
 }
 
-string getBiggestString(string a, string b)
+string GetBiggestString(string a, string b)
 {
     if (a.CompareTo(b) > 0)
     {

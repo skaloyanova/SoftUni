@@ -9,7 +9,7 @@ int qty = int.Parse(Console.ReadLine());
 //OUTPUT
 // Print the result, rounded to the second decimal place
 
-Console.WriteLine($"{calculateTotalPrice(product, qty):f2}");
+Console.WriteLine($"{CalculateTotalPrice(product, qty):f2}");
 
 
 //METHOD
@@ -22,7 +22,7 @@ Console.WriteLine($"{calculateTotalPrice(product, qty):f2}");
  *	coke – 1.40
  *	snacks – 2.00
  */
-double calculateTotalPrice (string product, int qty)
+double CalculateTotalPrice (string product, int qty)
 {
     double price = 0;
 

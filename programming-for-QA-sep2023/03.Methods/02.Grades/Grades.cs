@@ -1,8 +1,8 @@
 ﻿double grade = double.Parse(Console.ReadLine());
 
-Console.WriteLine(getGradeLabel(grade));
+Console.WriteLine(GetGradeLabel(grade));
 
-string getGradeLabel (double grade)
+string GetGradeLabel (double grade)
 {
     if (grade >= 2 && grade <= 2.99)
     {

@@ -22,13 +22,13 @@ internal class Program
         // Printing top part
         for (int i = 1; i <= n - 1; i++)
         {
-            printRow(i);
+            PrintRow(i);
         }
 
         // Printing bottom part
         for (int i = n; i >= 1; i--)
         {
-            printRow(i);
+            PrintRow(i);
         }
         */
 
@@ -38,7 +38,7 @@ internal class Program
         bool isBottomPart = false;
         for (int i = 1; i <= 2 * n - 1 && i > 0;)
         {
-            printRow(i);
+            PrintRow(i);
 
             if (i == n)
             {
@@ -58,7 +58,7 @@ internal class Program
 
 
         // Method for ptinting 1 row
-        void printRow(int n)
+        void PrintRow(int n)
         {
             StringBuilder sb = new StringBuilder();
 

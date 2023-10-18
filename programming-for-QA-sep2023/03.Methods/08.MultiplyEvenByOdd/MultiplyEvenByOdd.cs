@@ -12,15 +12,15 @@ int num = Math.Abs(int.Parse(Console.ReadLine()));
 
 
 //OUTPUT
-Console.WriteLine(getMultipleOfEvenAndOdds(num));
+Console.WriteLine(GetMultipleOfEvenAndOdds(num));
 
 
 //METHODs
-int getMultipleOfEvenAndOdds(int num) {
-    return getSumOfEvenDigits(num) * getSumOfOddDigits(num);
+int GetMultipleOfEvenAndOdds(int num) {
+    return GetSumOfEvenDigits(num) * GetSumOfOddDigits(num);
 }
 
-int getSumOfEvenDigits(int num) {
+int GetSumOfEvenDigits(int num) {
 
     int sum = 0;
     while (num > 0)
@@ -35,7 +35,7 @@ int getSumOfEvenDigits(int num) {
     }
     return sum;
 }
-int getSumOfOddDigits(int num) {
+int GetSumOfOddDigits(int num) {
 
     int sum = 0;
     while (num > 0)

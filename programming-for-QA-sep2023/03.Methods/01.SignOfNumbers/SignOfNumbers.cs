@@ -1,8 +1,8 @@
 ﻿int num = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"The number {num} is {getSign(num)}.");
+Console.WriteLine($"The number {num} is {GetSign(num)}.");
 
-string getSign(int num)
+string GetSign(int num)
 {
     if (num > 0)
     {
