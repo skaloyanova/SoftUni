@@ -34,5 +34,5 @@ while (bombIndex >= 0)
 
     bombIndex = numbers.FindIndex(0, numbers.Count, e => e == bombNumber);  //returns -1 if there is no such element
 }
-
+ 
 Console.WriteLine(numbers.Sum());

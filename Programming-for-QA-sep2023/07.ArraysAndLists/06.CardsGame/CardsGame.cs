@@ -24,18 +24,15 @@ while (deck1.Count > 0 && deck2.Count > 0)
     {
         deck1.Add(card1);
         deck1.Add(card2);
-        RemoveFirstCardFromDecks(deck1, deck2);
     }
     else if (card2 > card1) 
     {
         deck2.Add(card2);
         deck2.Add(card1);
-        RemoveFirstCardFromDecks(deck1, deck2);
     }
-    else
-    {
-        RemoveFirstCardFromDecks(deck1, deck2);
-    }
+
+    deck1.RemoveAt(0);
+    deck2.RemoveAt(0);
 }
 
 if (deck1.Count > 0)
@@ -45,11 +42,4 @@ if (deck1.Count > 0)
 else if (deck2.Count > 0)
 {
     Console.WriteLine($"Second player wins! Sum: {deck2.Sum()}");
-}
-
-
-static void RemoveFirstCardFromDecks(List<int> deck1, List<int> deck2)
-{
-    deck1.RemoveAt(0);
-    deck2.RemoveAt(0);
 }
