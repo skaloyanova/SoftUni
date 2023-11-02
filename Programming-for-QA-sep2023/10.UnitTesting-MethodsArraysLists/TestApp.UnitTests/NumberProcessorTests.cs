@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-
+using System;
 using System.Collections.Generic;
 
 namespace TestApp.UnitTests;
@@ -20,19 +20,20 @@ public class NumberProcessorTests
         CollectionAssert.AreEqual(expected, actual);
     }
 
-    // TODO: finish test
     [Test]
     public void Test_ProcessNumbers_SquareRootOddNumbers()
     {
         // Arrange
+        List<int> input = new() { 3, 13, 27 };
+        List<double> expected = new() { Math.Sqrt(3), Math.Sqrt(13), Math.Sqrt(27) };
 
         // Act
-        
+        List<double> actual = NumberProcessor.ProcessNumbers(input);
+
         // Assert
-        //CollectionAssert.AreEqual(expected, actual);
+        CollectionAssert.AreEqual(expected, actual);
     }
 
-    // TODO: finish test
     [Test]
     public void Test_ProcessNumbers_HandleZero()
     {
@@ -41,19 +42,33 @@ public class NumberProcessorTests
         List<int> expected = new() { 0 };
 
         // Act
+        List<double> actual = NumberProcessor.ProcessNumbers(input);
 
         // Assert
+        CollectionAssert.AreEqual(expected, actual);
     }
 
     [Test]
     public void Test_ProcessNumbers_HandleNegativeNumbers()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> input = new() { -1, -4 };
+
+        // Act & Assert
+        Assert.That(() =>  NumberProcessor.ProcessNumbers(input), Throws.ArgumentException);
+
     }
 
     [Test]
     public void Test_ProcessNumbers_EmptyInput()
     {
-        // TODO: finish test
+        // Arrange
+        List<int> input = new() { };
+
+        // Act
+        List<double> actual = NumberProcessor.ProcessNumbers(input);
+
+        // Assert
+        CollectionAssert.IsEmpty(actual);
     }
 }

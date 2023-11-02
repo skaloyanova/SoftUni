@@ -17,12 +17,14 @@ public class EmailTests
         Assert.IsTrue(result);
     }
 
-    [Test]
-    public void Test_IsValidEmail_InvalidEmail()
+    [TestCase("aaa.com")]
+    [TestCase("")]
+    [TestCase(" ")]
+    [TestCase("asd d@gmail.com")]   //no spaces are allowed in an e-mail address
+    [TestCase("asdd@gmail@com")]
+    public void Test_IsValidEmail_InvalidEmail(string input)
     {
-        string invalidEmail = "aaa.com";
-
-        bool result = Email.IsValidEmail(invalidEmail);
+        bool result = Email.IsValidEmail(input);
 
         Assert.That(result, Is.False);
 
