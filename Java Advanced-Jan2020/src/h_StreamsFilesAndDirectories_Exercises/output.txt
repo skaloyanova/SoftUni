@@ -1,0 +1,2 @@
+src\h_StreamsFilesAndDirectories_Exercises\resources\inputOne.txt
+src\h_StreamsFilesAndDirectories_Exercises\resources\inputTwo.txt

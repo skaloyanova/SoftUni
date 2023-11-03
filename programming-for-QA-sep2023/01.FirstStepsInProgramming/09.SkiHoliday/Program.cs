@@ -28,7 +28,7 @@
                     else if (days <= 15)
                     {
                         discount = 0.35;
-                    }
+                    } 
                     else
                     {
                         discount = 0.5;

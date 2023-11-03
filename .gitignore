@@ -361,21 +361,21 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/programming-for-QA-sep2023/01-1.ConditionalStatements/01-1.ConditionalStatements.sln
-/programming-for-QA-sep2023/01-2.ComplexConditionalStatements/01-2.ComplexConditionalStatements.sln
-/programming-for-QA-sep2023/WebApp
-/programming-for-QA-sep2023/Test
-/programming-for-QA-sep2023/01-1.ConditionalStatements
-/programming-for-QA-sep2023/01-2.ComplexConditionalStatements
-/programming-for-QA-sep2023/01-3.SimpleAndCmplxConditStatements
-/programming-for-QA-sep2023/02-1.ForLoop/02-1.ForLoop.sln
-/programming-for-QA-sep2023/02-1.ForLoop
-/programming-for-QA-sep2023/02-2.WhileLoop
+/Programming-for-QA-sep2023/01-1.ConditionalStatements/01-1.ConditionalStatements.sln
+/Programming-for-QA-sep2023/01-2.ComplexConditionalStatements/01-2.ComplexConditionalStatements.sln
+/Programming-for-QA-sep2023/WebApp
+/Programming-for-QA-sep2023/Test
+/Programming-for-QA-sep2023/01-1.ConditionalStatements
+/Programming-for-QA-sep2023/01-2.ComplexConditionalStatements
+/Programming-for-QA-sep2023/01-3.SimpleAndCmplxConditStatements
+/Programming-for-QA-sep2023/02-1.ForLoop/02-1.ForLoop.sln
+/Programming-for-QA-sep2023/02-1.ForLoop
+/Programming-for-QA-sep2023/02-2.WhileLoop
 /CSharp-Fundamentals/ConditStatementsAndLoops-Exercise
 *.pdf
-/programming-for-QA-sep2023/02-3.Loops-Exercise
+/Programming-for-QA-sep2023/02-3.Loops-Exercise
 /CSharp-Fundamentals/01.ConditStatementsAndLoops-Exercise
-/programming-for-QA-sep2023/02-4.NestedLoops
+/Programming-for-QA-sep2023/02-4.NestedLoops
 /.gitignore
 /CSharp-Fundamentals/011.ConditStatementsAndLoops-Exercise
 /CSharp-Fundamentals/012.ConditStatementsAndLoops-Exercise
@@ -383,3 +383,34 @@ FodyWeavers.xsd
 /Programming-for-QA-sep2023/05.Arrays
 /Programming-for-QA-sep2023/06.Lists
 /CSharp-Fundamentals-2023/01-1.ConditStatementsAndLoops-Exercise
+
+
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
