@@ -8,7 +8,7 @@
 
 int[] numbers = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
 
-int n = int.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine() ?? "");
 
 if (n > numbers.Length)
 {

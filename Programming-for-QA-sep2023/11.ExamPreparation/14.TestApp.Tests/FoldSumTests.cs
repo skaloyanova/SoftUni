@@ -14,6 +14,6 @@ public class FoldSumTests
     {
         string result = FoldSum.FoldArray(arr);
 
-        Assert.AreEqual(expected, result);
+        Assert.That(result, Is.EqualTo(expected));
     }
 }

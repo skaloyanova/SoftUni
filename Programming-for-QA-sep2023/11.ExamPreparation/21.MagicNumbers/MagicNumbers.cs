@@ -7,7 +7,7 @@
  * If there are no such numbers print "no"
  */
 
-int n = int.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine() ?? "");
 
 string output = "";
 
@@ -49,11 +49,6 @@ static bool IsPrime(int n)
     return true;
 }
 
-static bool IsDivisibleByTwo (int n)
-{
-    return n % 2 == 0;
-}
-
 static bool IsMagicNumber (int n)
 {
     int sum = 0;
@@ -61,7 +56,7 @@ static bool IsMagicNumber (int n)
     while (n > 0)
     {
         int lastDigit = n % 10;
-        n = n / 10;
+        n /= 10;
 
         if (IsPrime(lastDigit) == false)
         {
