@@ -8,12 +8,11 @@ QA Related
     + Programming Advanced for QA - November 2023
 
 Java Programming
-- [Java Fundamentals-Jan2020](./Java Fundamentals-Jan2020)
-- [Java Fundamentals-Exams](./Java Fundamentals-Exams)
-- [Java Advanced-Jan2020](./Java Advanced-Jan2020)
-- [Java OOP-Feb2020](./Java OOP-Feb2020)
-- [Java Algorithms-May2020](./Java Algorithms-May2020)
+- [Java Fundamentals](./Java-Fundamentals-Jan2020) - execrices completed in 2020 year
+- [Java Fundamentals](./Java-Fundamentals-Exams) - execrices completed in 2020 year
+- [Java Advanced](./Java-Advanced-Jan2020) - execrices completed in 2020 year
+- [Java OOP](./Java-OOP-Feb2020) - execrices completed in 2020 year
+- [Java Algorithms](./Java-Algorithms-May2020) - execrices completed in 2020 year
 
 C# Programming
-- [CSharp-Fundamentals-2023](./CSharp-Fundamentals-2023)
-
+- [CSharp Fundamentals](./CSharp-Fundamentals-2023) - execrices completed in 2023 year
