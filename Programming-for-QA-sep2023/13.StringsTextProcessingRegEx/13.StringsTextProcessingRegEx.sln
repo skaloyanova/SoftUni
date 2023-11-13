@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ReverseStrings", "01.ReverseStrings\01.ReverseStrings.csproj", "{4E1891AA-7F15-42C1-91C6-5E3CC6CE7673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ReverseStrings", "01.ReverseStrings\01.ReverseStrings.csproj", "{4E1891AA-7F15-42C1-91C6-5E3CC6CE7673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RepeatStrings", "02.RepeatStrings\02.RepeatStrings.csproj", "{04460A4F-38E5-424E-B9BE-49B66378F07F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.RepeatStrings", "02.RepeatStrings\02.RepeatStrings.csproj", "{04460A4F-38E5-424E-B9BE-49B66378F07F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Substring", "03.Substring\03.Substring.csproj", "{9FC0CBAC-37E2-45A5-85AA-852D8C9F05DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Substring", "03.Substring\03.Substring.csproj", "{9FC0CBAC-37E2-45A5-85AA-852D8C9F05DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.TextFilter", "04.TextFilter\04.TextFilter.csproj", "{A032B700-E684-4BF9-BA66-53C0784D6FC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.TextFilter", "04.TextFilter\04.TextFilter.csproj", "{A032B700-E684-4BF9-BA66-53C0784D6FC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.DigitsLettersOther", "05.DigitsLettersOther\05.DigitsLettersOther.csproj", "{231C099B-F8BC-48AA-B843-39BDE286195B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.DigitsLettersOther", "05.DigitsLettersOther\05.DigitsLettersOther.csproj", "{231C099B-F8BC-48AA-B843-39BDE286195B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.MatchFullName", "06.MatchFullName\06.MatchFullName.csproj", "{8591E5B0-DC81-4142-91AF-E4ED5D6B2346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.MatchPhoneNumber", "07.MatchPhoneNumber\07.MatchPhoneNumber.csproj", "{34F2E583-C7E4-4748-8A90-746A83F6C108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.MatchDates", "08.MatchDates\08.MatchDates.csproj", "{C577B976-5792-4526-BF3B-8527CE277BE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{231C099B-F8BC-48AA-B843-39BDE286195B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{231C099B-F8BC-48AA-B843-39BDE286195B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{231C099B-F8BC-48AA-B843-39BDE286195B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8591E5B0-DC81-4142-91AF-E4ED5D6B2346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8591E5B0-DC81-4142-91AF-E4ED5D6B2346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8591E5B0-DC81-4142-91AF-E4ED5D6B2346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8591E5B0-DC81-4142-91AF-E4ED5D6B2346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F2E583-C7E4-4748-8A90-746A83F6C108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F2E583-C7E4-4748-8A90-746A83F6C108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F2E583-C7E4-4748-8A90-746A83F6C108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F2E583-C7E4-4748-8A90-746A83F6C108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C577B976-5792-4526-BF3B-8527CE277BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C577B976-5792-4526-BF3B-8527CE277BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C577B976-5792-4526-BF3B-8527CE277BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C577B976-5792-4526-BF3B-8527CE277BE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
