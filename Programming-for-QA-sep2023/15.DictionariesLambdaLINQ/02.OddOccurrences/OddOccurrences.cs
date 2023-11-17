@@ -22,9 +22,11 @@ foreach (string word in words)
 }
 
 // Filter Dictionary and leave only words with odd number of occurrences
-wordsCount = wordsCount.Where(e => e.Value % 2 != 0).ToDictionary(e => e.Key, e => e.Value);
+//wordsCount = wordsCount.Where(e => e.Value % 2 != 0).ToDictionary(e => e.Key, e => e.Value);
 
 // Output
-Console.WriteLine(string.Join(" ", wordsCount.Select(e => e.Key)));
+//Console.WriteLine(string.Join(" ", wordsCount.Select(e => e.Key)));
 
+// Filter + Output
+Console.WriteLine(string.Join(" ", wordsCount.Where(e => e.Value % 2 != 0).Select(e => e.Key)));
 

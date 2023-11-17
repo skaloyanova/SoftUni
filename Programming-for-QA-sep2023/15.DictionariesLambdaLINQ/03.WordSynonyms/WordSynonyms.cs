@@ -27,7 +27,7 @@ for (int i = 0; i < wordsCount; i++)
 }
 
 //OUTPUT
-foreach (var kvp in synonyms)
+foreach (KeyValuePair<string, List<string>> kvp in synonyms)
 {
     Console.WriteLine($"{kvp.Key} - {string.Join(", ", kvp.Value)}");
 }

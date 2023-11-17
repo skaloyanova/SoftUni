@@ -49,7 +49,7 @@ foreach (int num in numbers)
 //}
 
 // OUTPUT
-foreach (var kvp in counter)
+foreach (KeyValuePair<int, int> kvp in counter)
 {
     Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
 }
