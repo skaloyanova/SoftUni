@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CountRealNumbers", "01.CountRealNumbers\01.CountRealNumbers.csproj", "{6B5EF3A3-253F-4ABB-8B50-901ACC45911C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.CountRealNumbers", "01.CountRealNumbers\01.CountRealNumbers.csproj", "{6B5EF3A3-253F-4ABB-8B50-901ACC45911C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OddOccurrences", "02.OddOccurrences\02.OddOccurrences.csproj", "{2273B50F-8EA4-4D60-A786-9B1A4CB84A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.OddOccurrences", "02.OddOccurrences\02.OddOccurrences.csproj", "{2273B50F-8EA4-4D60-A786-9B1A4CB84A82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.WordSynonyms", "03.WordSynonyms\03.WordSynonyms.csproj", "{E526B5DA-5A15-4592-BDE2-999603573A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.WordSynonyms", "03.WordSynonyms\03.WordSynonyms.csproj", "{E526B5DA-5A15-4592-BDE2-999603573A40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.WordFilter", "04.WordFilter\04.WordFilter.csproj", "{6B7D754D-168C-4A93-80AE-FCD78BC7A9B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.WordFilter", "04.WordFilter\04.WordFilter.csproj", "{6B7D754D-168C-4A93-80AE-FCD78BC7A9B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.CountCharsInString", "05.CountCharsInString\05.CountCharsInString.csproj", "{76221390-E6CC-479D-852C-125812F3542A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.MinerTask", "06.MinerTask\06.MinerTask.csproj", "{E0E93263-5059-416A-AA37-410777EB34CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Orders", "07.Orders\07.Orders.csproj", "{0D5ED5EB-4B06-402E-82BE-DB73D1B96006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{6B7D754D-168C-4A93-80AE-FCD78BC7A9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B7D754D-168C-4A93-80AE-FCD78BC7A9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B7D754D-168C-4A93-80AE-FCD78BC7A9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76221390-E6CC-479D-852C-125812F3542A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76221390-E6CC-479D-852C-125812F3542A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76221390-E6CC-479D-852C-125812F3542A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76221390-E6CC-479D-852C-125812F3542A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E93263-5059-416A-AA37-410777EB34CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E93263-5059-416A-AA37-410777EB34CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E93263-5059-416A-AA37-410777EB34CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E93263-5059-416A-AA37-410777EB34CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5ED5EB-4B06-402E-82BE-DB73D1B96006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5ED5EB-4B06-402E-82BE-DB73D1B96006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5ED5EB-4B06-402E-82BE-DB73D1B96006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5ED5EB-4B06-402E-82BE-DB73D1B96006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
