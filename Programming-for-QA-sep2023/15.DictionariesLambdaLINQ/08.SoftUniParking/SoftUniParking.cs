@@ -26,7 +26,7 @@ for (int i = 0; i < n; i++)
         }
         catch (Exception)
         {
-            Console.WriteLine($"ERROR: already registered with plate number {lpn}");
+            Console.WriteLine($"ERROR: already registered with plate number {parking[username]}");
         }
     }
     else if (command == "unregister")
