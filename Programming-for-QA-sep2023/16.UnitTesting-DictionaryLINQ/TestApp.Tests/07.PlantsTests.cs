@@ -32,6 +32,7 @@ public class PlantsTests
     public void Test_GetFastestGrowing_WithMultiplePlants_ShouldReturnGroupedPlants()
     {
         string[] input = { "plant", "plant6", "alabaa", "abcde", "four" };
+
         StringBuilder sb = new ();
         sb.AppendLine("Plants with 4 letters:");
         sb.AppendLine("four");
@@ -53,6 +54,7 @@ public class PlantsTests
     public void Test_GetFastestGrowing_WithMixedCasePlants_ShouldBeCaseInsensitive()
     {
         string[] input = { "plant", "plAnt6", "alaAAb", "Abcde", "f0ur" };
+
         StringBuilder sb = new();
         sb.AppendLine("Plants with 4 letters:");
         sb.AppendLine("f0ur");
@@ -74,6 +76,7 @@ public class PlantsTests
     public void Test_GetFastestGrowing_WithPlantsWithSpace_ShouldReturnGroupedPlants()
     {
         string[] input = { "pla nt", "", "plAnt6", "  ", "1" };
+
         StringBuilder sb = new();
         sb.AppendLine("Plants with 0 letters:");
         sb.AppendLine("");
