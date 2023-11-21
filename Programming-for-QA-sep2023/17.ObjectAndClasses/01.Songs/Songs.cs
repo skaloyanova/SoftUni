@@ -48,6 +48,7 @@
         }
     }
 
+    /* ALL Classes are in one place, because solutions are tested this way in Judge system */
     public class Song
     {
         public string TypeList { get; set; }

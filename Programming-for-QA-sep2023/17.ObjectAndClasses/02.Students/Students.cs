@@ -4,11 +4,7 @@
     {
         static void Main(string[] args)
         {
-            /*
-             * Read information about some students, until you receive the "end" command. 
-             * After that, you will receive a city name.
-             * Print the students who are from the given city in the following format: "{firstName} {lastName} is {age} years old."
-             */
+            // INPUT: Read information about some students, until you receive the "end" command. After that, you will receive a city name.
 
             List<Student> studentsList = new List<Student>();
 
@@ -27,6 +23,8 @@
 
             string city = Console.ReadLine();
 
+
+            // OUTPUT: Print the students who are from the given city in the following format: "{firstName} {lastName} is {age} years old."
             studentsList
                 .Where(s => s.HomeTown == city)
                 .ToList()
@@ -34,6 +32,7 @@
         }
     }
 
+    /* ALL Classes are in one place, because solutions are tested this way in Judge system */
     public class Student
     {
         public string FirstName { get; set; }
@@ -49,6 +48,7 @@
             this.HomeTown = homeTown;
         }
 
+        // format: "{firstName} {lastName} is {age} years old.
         public override string ToString()
         {
             return $"{FirstName} {LastName} is {Age} years old.";

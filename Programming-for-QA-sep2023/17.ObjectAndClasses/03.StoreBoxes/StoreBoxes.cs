@@ -6,10 +6,7 @@ namespace _03.StoreBoxes
     {
         static void Main(string[] args)
         {
-            /*
-             * Until you receive "end", you will be receiving data in the following format: "{Serial Number} {Item Name} {Item Quantity} {itemPrice}"
-             * The Price of one box has to be calculated: itemQuantity * itemPrice.
-             */
+            // INPUT: Until you receive "end", you will be receiving data in the following format: "{Serial Number} {Item Name} {Item Quantity} {itemPrice}"
 
             var boxes = new List<Box>();
 
@@ -32,17 +29,13 @@ namespace _03.StoreBoxes
                 input = Console.ReadLine();
             }
 
-            /*
-             * Print all the boxes ordered descending by price for a box, in the following format: 
-             *   {boxSerialNumber}
-             *   -- {boxItemName} - ${boxItemPrice}: {boxItemQuantity}
-             *   -- ${boxPrice}
-             * The price should be formatted to the 2nd digit after the decimal separator.
-             */
+            // OUTPUT: Print all the boxes ordered descending by price for a box, in the following format: 
 
             boxes.OrderByDescending(b => b.Price).ToList().ForEach(b => Console.WriteLine(b));
         }
     }
+
+    /* ALL Classes are in one place, because solutions are tested this way in Judge system */
 
     public class Item
     {
@@ -63,6 +56,7 @@ namespace _03.StoreBoxes
         public int ItemQty { get; set; }
         public double Price { get; private set; }
 
+        // The Price of one box has to be calculated: itemQuantity * itemPrice.
         public Box(string serialNumber, Item item, int itemQty)
         {
             SerialNumber = serialNumber;
@@ -71,12 +65,11 @@ namespace _03.StoreBoxes
             Price = item.Price * itemQty;
         }
 
-        /*
+        /* Output string for Box
          * {boxSerialNumber}
          * -- {boxItemName} - ${boxItemPrice}: {boxItemQuantity}
          * -- ${boxPrice}
-         * The price should be formatted to the 2nd digit after the decimal separator.
-         */
+         * The price should be formatted to the 2nd digit after the decimal separator. */
         public override string ToString()
         {
             StringBuilder sb = new();
