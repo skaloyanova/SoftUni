@@ -17,24 +17,26 @@ namespace _09.VehicleCatalogue2
             this.Trucks = new();
         }
 
+        public void Add(Vehicle vehicle)
+        {
+            if (vehicle.Type.ToLower() == "car")
+            {
+                this.Cars.Add(vehicle);
+            }
+            else if (vehicle.Type.ToLower() == "truck")
+            {
+                this.Trucks.Add(vehicle);
+            }
+        }
+
         public double GetCarsAverageHorsePower ()
         {
-            if (Cars.Count == 0)
-            {
-                return -1;
-            }
-
-            return Cars.Average(c => c.HorsePower);
+            return (Cars.Count == 0) ? 0 : Cars.Average(c => c.HorsePower);
         }
 
         public double GetTrucksAverageHorsePower()
         {
-            if (Trucks.Count == 0)
-            {
-                return -1;
-            }
-
-            return Trucks.Average(c => c.HorsePower);
+            return (Trucks.Count == 0) ? 0 : Trucks.Average(c => c.HorsePower);
         }
 
         public Vehicle GetVehicle(string model)

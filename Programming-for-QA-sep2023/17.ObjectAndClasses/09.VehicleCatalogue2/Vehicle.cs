@@ -16,7 +16,7 @@ namespace _09.VehicleCatalogue2
 
         public Vehicle(string type, string model, string color, double horsePower)
         {
-            this.Type = char.ToUpper(type[0]) + type.Substring(1);    //changing "car/truck" to "Car/Truck"
+            this.Type = char.ToUpper(type[0]) + type.Substring(1).ToLower();    //changing "car/truck" to "Car/Truck"
             this.Model = model;
             this.Color = color;
             this.HorsePower = horsePower;
