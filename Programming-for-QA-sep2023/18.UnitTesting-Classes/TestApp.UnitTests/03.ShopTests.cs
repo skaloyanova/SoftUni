@@ -20,7 +20,11 @@ public class ShopTests
     public void Test_AddAndGetBoxes_ReturnsSortedBoxes()
     {
         // Arrange
-        string[] products = { "54321 Gadget 3 15.5", "98765 Gizmo 2 8.4", "12345 Widget 5 10.02" };
+        string[] products = {
+            "54321 Gadget 3 15.5",
+            "98765 Gizmo 2 8.4",
+            "12345 Widget 5 10.02",
+        };
 
         string expected = $"12345{Environment.NewLine}" +
             $"-- Widget - $10.02: 5{Environment.NewLine}" +

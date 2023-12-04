@@ -39,6 +39,19 @@ public class PersonTests
     }
 
     [Test]
+    public void Test_AddPeople_ReturnEmptyList_WhenNoDataIsGiven()
+    {
+        //Assert
+        string[] input = { };
+
+        // Act
+        List<Person> resultPeopleList = this._person.AddPeople(input);
+
+        //Assert
+        CollectionAssert.IsEmpty(resultPeopleList);
+    }
+
+    [Test]
     public void Test_GetByAgeAscending_SortsPeopleByAge()
     {
         List<Person> input = new();

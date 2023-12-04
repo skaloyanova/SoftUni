@@ -20,8 +20,13 @@ public class VehicleTests
     public void Test_AddAndGetCatalogue_ReturnsSortedCatalogue()
     {
         // Arrange
-        string[] vehicles = { "Car/Toyota/Camry/150", "Truck/Volvo/VNL/500", "Car/Ford/Focus/120" };
-        string expected = $"Cars:{Environment.NewLine}" +
+        string[] vehicles = {
+            "Car/Toyota/Camry/150",
+            "Truck/Volvo/VNL/500",
+            "Car/Ford/Focus/120",
+        };
+        string expected = 
+            $"Cars:{Environment.NewLine}" +
             $"Ford: Focus - 120hp{Environment.NewLine}" +
             $"Toyota: Camry - 150hp{Environment.NewLine}" +
             $"Trucks:{Environment.NewLine}" +
