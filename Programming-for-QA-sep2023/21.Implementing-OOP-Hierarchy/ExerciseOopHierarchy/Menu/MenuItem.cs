@@ -1,4 +1,4 @@
-namespace ExerciseOopHierarchy;
+namespace ExerciseOopHierarchy.Menu;
 
 public abstract class MenuItem
 {
