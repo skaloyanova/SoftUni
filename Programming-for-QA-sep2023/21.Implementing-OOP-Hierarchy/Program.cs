@@ -21,5 +21,9 @@ order.AddItem(restaurant.GetMenuItem(0));
 order.AddItem(restaurant.GetMenuItem(2));
 restaurant.PlaceOrder(customer1, order);
 
+Order order2 = new();
+order2.AddItem(restaurant.GetMenuItem(1));
+restaurant.PlaceOrder(customer1, order2);
+
 restaurant.DisplayMenu();
 restaurant.DisplayOrderHistory(customer1);

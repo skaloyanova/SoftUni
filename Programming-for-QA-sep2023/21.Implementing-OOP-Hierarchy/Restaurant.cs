@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace ExerciseOopHierarchy;
 
@@ -47,7 +48,15 @@ public class Restaurant
     public void DisplayOrderHistory(Customer customer)
     {
         Console.WriteLine($"{customer.Name}'s Order History:");
-        customer.OrderHistory.ToList().ForEach(o => Console.WriteLine($"Order Total: ${o.GetTotal()}"));
-        customer.OrderHistory.ToList().ForEach(o => o.Items.ToList().ForEach(i => Console.WriteLine("  " + i)));
+
+        foreach (Order order in customer.OrderHistory)
+        {
+            Console.WriteLine($"Order Total: ${order.GetTotal()}");
+
+            order.Items
+                .ToList()
+                .ForEach(i => Console.WriteLine($"  {i}"));
+        }
     }
+
 }
