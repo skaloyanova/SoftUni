@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseOopHierarchy", "ExerciseOopHierarchy.csproj", "{4DB1A1BB-4954-4442-8053-B08ACB595331}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciseOopHierarchy", "ExerciseOopHierarchy\ExerciseOopHierarchy.csproj", "{CE5E56CE-791C-406B-82F9-8DC9C6391E37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildFarm", "WildFarm\WildFarm.csproj", "{76100200-43C0-40DE-9801-EEA5DB6914ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4DB1A1BB-4954-4442-8053-B08ACB595331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DB1A1BB-4954-4442-8053-B08ACB595331}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DB1A1BB-4954-4442-8053-B08ACB595331}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DB1A1BB-4954-4442-8053-B08ACB595331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5E56CE-791C-406B-82F9-8DC9C6391E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5E56CE-791C-406B-82F9-8DC9C6391E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5E56CE-791C-406B-82F9-8DC9C6391E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5E56CE-791C-406B-82F9-8DC9C6391E37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76100200-43C0-40DE-9801-EEA5DB6914ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76100200-43C0-40DE-9801-EEA5DB6914ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76100200-43C0-40DE-9801-EEA5DB6914ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76100200-43C0-40DE-9801-EEA5DB6914ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
