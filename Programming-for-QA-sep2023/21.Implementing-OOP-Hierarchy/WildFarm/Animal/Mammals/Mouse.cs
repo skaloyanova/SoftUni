@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WildFarm.Animal;
+﻿namespace WildFarm.Animal;
 using WildFarm.Food;
 
 public class Mouse : Mammal
@@ -18,13 +12,13 @@ public class Mouse : Mammal
         Console.WriteLine("Squeak"); ;
     }
 
-    public override void FeedAnimal(Food food, int quantity)
+    public override void FeedAnimal(Food food)
     {
         //Mice eat vegetables and fruits
         if (food.GetType().Name == "Vegetable" || food.GetType().Name == "Fruit")
         {
-            this.FoodEaten += quantity;
-            this.Weight += 0.1 * quantity;
+            this.FoodEaten += food.Quantity;
+            this.Weight += 0.1 * food.Quantity;
         }
         else
         {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WildFarm.Animal;
+﻿namespace WildFarm.Animal;
 using WildFarm.Food;
 
 public abstract class Animal
@@ -21,10 +15,6 @@ public abstract class Animal
 
     public abstract void AskForFood();
 
-    public abstract void FeedAnimal(Food food, int quantity);
+    public abstract void FeedAnimal(Food food);
 
-    public override string ToString()
-    {
-        return base.ToString();
-    }
 }

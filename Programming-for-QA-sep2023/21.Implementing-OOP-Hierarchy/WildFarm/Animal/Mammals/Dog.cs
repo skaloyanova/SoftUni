@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WildFarm.Animal;
+﻿namespace WildFarm.Animal;
 using WildFarm.Food;
 
 public class Dog : Mammal
@@ -18,13 +12,13 @@ public class Dog : Mammal
         Console.WriteLine("Woof!");
     }
 
-    public override void FeedAnimal(Food food, int quantity)
+    public override void FeedAnimal(Food food)
     {
         //Dogs eat only meat
         if (food.GetType().Name == "Meat")
         {
-            this.FoodEaten += quantity;
-            this.Weight += 0.4 * quantity;
+            this.FoodEaten += food.Quantity;
+            this.Weight += 0.4 * food.Quantity;
         }
         else
         {

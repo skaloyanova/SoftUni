@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WildFarm.Animal;
+﻿namespace WildFarm.Animal;
 using WildFarm.Food;
 
 public class Cat : Feline
@@ -18,13 +12,13 @@ public class Cat : Feline
         Console.WriteLine("Meow"); ;
     }
 
-    public override void FeedAnimal(Food food, int quantity)
+    public override void FeedAnimal(Food food)
     {
         //Cats eat vegetables and meat
         if (food.GetType().Name == "Vegetable" || food.GetType().Name == "Meat")
         {
-            this.FoodEaten += quantity;
-            this.Weight += 0.3 * quantity;
+            this.FoodEaten += food.Quantity;
+            this.Weight += 0.3 * food.Quantity;
         }
         else
         {

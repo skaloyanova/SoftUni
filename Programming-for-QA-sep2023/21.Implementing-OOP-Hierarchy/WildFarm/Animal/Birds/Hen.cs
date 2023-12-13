@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WildFarm.Animal;
+﻿namespace WildFarm.Animal;
 using WildFarm.Food;
 
 public class Hen : Bird
@@ -18,11 +12,11 @@ public class Hen : Bird
         Console.WriteLine("Cluck");
     }
 
-    public override void FeedAnimal(Food food, int quantity)
+    public override void FeedAnimal(Food food)
     {
         //Hens eat everything
-        this.FoodEaten += quantity;
-        this.Weight += 0.35 * quantity;
+        this.FoodEaten += food.Quantity;
+        this.Weight += 0.35 * food.Quantity;
 
     }
 }

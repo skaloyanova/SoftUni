@@ -26,7 +26,7 @@ while (command != "End")
         "Mouse" => new Mouse(name, weight, split[3]),
         "Cat" => new Cat(name, weight, split[3], split[4]),
         "Tiger" => new Tiger(name, weight, split[3], split[4]),
-        _ => throw new ArgumentException()
+        _ => throw new ArgumentException("Invalid animal type!")
     };
 
     animals.Add(animal);
@@ -50,7 +50,7 @@ while (command != "End")
     };
 
     animal.AskForFood();
-    animal.FeedAnimal(food, quantity);
+    animal.FeedAnimal(food);
 
     command = Console.ReadLine();
 }
