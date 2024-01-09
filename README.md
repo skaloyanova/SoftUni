@@ -14,7 +14,7 @@ This is public collection with my solutions for the following courses at SoftUni
 - [Java Fundamentals](./Java-Fundamentals-Jan2020) - execrices completed in 2020 year
 - [Java Fundamentals Exams](./Java-Fundamentals-Exams) - execrices completed in 2020 year
 - [Java Advanced](./Java-Advanced-Jan2020) - execrices completed in 2020 year
-- [Java OOP](./Java OOP-Feb2020) - execrices completed in 2020 year
+- [Java OOP](./Java-OOP-Feb2020) - execrices completed in 2020 year
 - [Java Algorithms](./Java-Algorithms-May2020) - execrices completed in 2020 year
 
 **C# Programming**
