@@ -361,28 +361,19 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/QA_Programming-for-QA-Sep2023/01-1.ConditionalStatements/01-1.ConditionalStatements.sln
-/QA_Programming-for-QA-Sep2023/01-2.ComplexConditionalStatements/01-2.ComplexConditionalStatements.sln
-/QA_Programming-for-QA-Sep2023/WebApp
-/QA_Programming-for-QA-Sep2023/Test
-/QA_Programming-for-QA-Sep2023/01-1.ConditionalStatements
-/QA_Programming-for-QA-Sep2023/01-2.ComplexConditionalStatements
-/QA_Programming-for-QA-Sep2023/01-3.SimpleAndCmplxConditStatements
-/QA_Programming-for-QA-Sep2023/02-1.ForLoop/02-1.ForLoop.sln
-/QA_Programming-for-QA-Sep2023/02-1.ForLoop
-/QA_Programming-for-QA-Sep2023/02-2.WhileLoop
-/CSharp-Fundamentals/ConditStatementsAndLoops-Exercise
-*.pdf
-/QA_Programming-for-QA-Sep2023/02-3.Loops-Exercise
-/CSharp-Fundamentals/01.ConditStatementsAndLoops-Exercise
-/QA_Programming-for-QA-Sep2023/02-4.NestedLoops
+/Programming-for-QA-sep2023/01-1.ConditionalStatements
+/Programming-for-QA-sep2023/01-2.ComplexConditionalStatements
+/Programming-for-QA-sep2023/01-3.SimpleAndCmplxConditStatements
+/Programming-for-QA-sep2023/02-1.ForLoop/02-1.ForLoop.sln
+/Programming-for-QA-sep2023/02-1.ForLoop
+/Programming-for-QA-sep2023/02-2.WhileLoop
+/Programming-for-QA-sep2023/02-3.Loops-Exercise
+/Programming-for-QA-sep2023/02-4.NestedLoops
+/Programming-for-QA-sep2023/05.Arrays
+/Programming-for-QA-sep2023/06.Lists
 /.gitignore
-/CSharp-Fundamentals/011.ConditStatementsAndLoops-Exercise
-/CSharp-Fundamentals/012.ConditStatementsAndLoops-Exercise
-/CSharp-Fundamentals/01-1.ConditStatementsAndLoops-Exercise
-/QA_Programming-for-QA-Sep2023/05.Arrays
-/QA_Programming-for-QA-Sep2023/06.Lists
-/CSharp-Fundamentals-2023/01-1.ConditStatementsAndLoops-Exercise
+*.pdf
+/CSharp_Fundamentals-2023/01-1.ConditStatementsAndLoops-Exercise
 
 
 ### IntelliJ IDEA ###
