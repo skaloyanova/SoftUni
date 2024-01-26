@@ -1,7 +1,7 @@
 function age(age) {
     'use strict'
 
-    let resut;
+    let resut = '';
 
     if (age < 0) {
         resut = "out of bounds";
