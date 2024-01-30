@@ -19,16 +19,18 @@ function store(stockArray, deliveryArray) {
         const product = stockArray[i];
         const quantity = Number(stockArray[i + 1]);
 
-        products[`${product}`] = quantity;
+        products[product] = quantity;
     }
 
     for (let i = 0; i < deliveryArray.length; i += 2) {
         const product = deliveryArray[i];
         const quantity = Number(deliveryArray[i + 1]);
 
-        const productCurrentQuantity = products[product];
-        const newQuantity = productCurrentQuantity ? quantity + productCurrentQuantity : quantity
-        products[`${product}`] = newQuantity;
+        if (products.hasOwnProperty(product)) {
+            products[product] += quantity;          //if product exists, update quantity
+        } else {
+            products[product] = quantity;
+        }
     }
 
     for (const product in products) {
