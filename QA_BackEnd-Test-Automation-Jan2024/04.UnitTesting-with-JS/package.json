@@ -1,0 +1,24 @@
+{
+  "name": "04.unittesting-with-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "mocha ./*.spec.js",
+    "test01": "mocha ./01-*.spec.js",
+    "test02": "mocha ./02-*.spec.js",
+    "test03": "mocha ./03-*.spec.js",
+    "test04": "mocha ./04-*.spec.js",
+    "test05": "mocha ./05-*.spec.js",
+    "test06": "mocha ./06-*.spec.js",
+    "test07": "mocha ./07-*.spec.js",
+    "test08": "mocha ./08-*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0"
+  }
+}
