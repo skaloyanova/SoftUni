@@ -35,11 +35,11 @@ describe('lookupChar(string, index)', () => {
     })
 
     it('should return undefined if index parameter is not integer (decimal number, string, array, boolean, object)', () => {
-        const result1 = lookupChar('text', 1.5);
-        const result2 = lookupChar('text', '3');
-        const result3 = lookupChar('text', [1]);
-        const result4 = lookupChar('text', true);
-        const result5 = lookupChar('text', {});
+        const result1 = lookupChar('some text', 1.5);
+        const result2 = lookupChar('some text', '3');
+        const result3 = lookupChar('some text', [1]);
+        const result4 = lookupChar('some text', true);
+        const result5 = lookupChar('some text', {});
 
         expect(result1).undefined;
         expect(result2).undefined;
@@ -49,23 +49,23 @@ describe('lookupChar(string, index)', () => {
     })
 
     it('should return "Incorrect index" if index parameter is bigger than or equal to the string length', () => {
-        const result1 = lookupChar('text', 4);
-        const result2 = lookupChar('text', 5);
+        const result1 = lookupChar('some text', 9);
+        const result2 = lookupChar('some text', 10);
 
         expect(result1).equals('Incorrect index');
         expect(result2).equals('Incorrect index');
     })
 
     it('should return "Incorrect index" if index parameter is a negative number', () => {
-        const result = lookupChar('text', -1);
+        const result = lookupChar('some text', -1);
 
         expect(result).equals('Incorrect index');
     })
 
     it('should return correct char if valid parameters are given', () => {
-        const result = lookupChar('text', 3);
+        const result = lookupChar('some text', 3);
 
-        expect(result).equals('t');
+        expect(result).equals('e');
     })
 
     it('should return "Incorrect index" if empty string is given', () => {
