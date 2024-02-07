@@ -44,7 +44,7 @@ describe('createCalculator()', () => {
         calculator.add(4.6);
         const result = calculator.get();
         //Assert
-        expect(result).equals(-2.8);
+        expect(result).closeTo(-2.8, 0.0001);
     })
 
     it('should return correct result if multiple operations are performed and input is mixed (string / number)', () => {
