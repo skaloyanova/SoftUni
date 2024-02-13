@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace LibroConsoleAPI.IntegrationTests
+namespace LibroConsoleAPI.IntegrationTests.XUnit
 {
     public class TestLibroDbContext : LibroDbContext
     {

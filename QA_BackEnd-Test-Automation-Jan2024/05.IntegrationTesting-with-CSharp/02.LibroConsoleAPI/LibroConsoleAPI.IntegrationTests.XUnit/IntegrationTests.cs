@@ -4,7 +4,7 @@ using LibroConsoleAPI.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace LibroConsoleAPI.IntegrationTests
+namespace LibroConsoleAPI.IntegrationTests.XUnit
 {
     public class IntegrationTests : IClassFixture<BookManagerFixture>
     {

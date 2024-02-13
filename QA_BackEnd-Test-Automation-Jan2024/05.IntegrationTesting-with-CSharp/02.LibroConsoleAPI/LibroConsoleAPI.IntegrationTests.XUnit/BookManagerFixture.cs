@@ -1,6 +1,6 @@
 ﻿using LibroConsoleAPI.Business.Contracts;
 using LibroConsoleAPI.Business;
-using LibroConsoleAPI.IntegrationTests;
+using LibroConsoleAPI.IntegrationTests.XUnit;
 using LibroConsoleAPI.Repositories;
 
 public class BookManagerFixture : IDisposable
