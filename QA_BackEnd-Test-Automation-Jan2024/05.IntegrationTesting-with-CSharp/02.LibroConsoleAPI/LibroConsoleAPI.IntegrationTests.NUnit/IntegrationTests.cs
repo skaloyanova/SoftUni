@@ -51,12 +51,50 @@ namespace LibroConsoleAPI.IntegrationTests.NUnit
             Assert.That(bookInDb.Author, Is.EqualTo("John Doe"));
         }
 
-        [Test]
-        public async Task AddBookAsync_TryToAddBookWithInvalidCredentials_ShouldThrowException()
+        [TestCase(0)]
+        [TestCase(-5)]
+        public async Task AddBookAsync_TryToAddBookWithInvalidPages_ShouldThrowException(int pages)
         {
-            throw new NotImplementedException();
+            //Arrange
+            var newBook = new Book
+            {
+                Title = "Book with invalid pages",
+                Author = "Some author",
+                ISBN = "1100000009001",
+                YearPublished = 2000,
+                Genre = "comedy",
+                Pages = pages,
+                Price = 20.01
+            };
+
+            //Act
+            var exception = Assert.ThrowsAsync<ValidationException>(() => bookManager.AddAsync(newBook));
+            Assert.That(exception.Message, Is.EqualTo("Book is invalid."));
         }
 
+        [TestCase(0.0)]
+        [TestCase(-5.0)]
+        public async Task AddBookAsync_TryToAddBookWithInvalidPrice_ShouldThrowException(double price)
+        {
+            //Arrange
+            var newBook = new Book
+            {
+                Title = "Book with invalid pages",
+                Author = "Some author",
+                ISBN = "1100000009001",
+                YearPublished = 2000,
+                Genre = "comedy",
+                Pages = 100,
+                Price = price
+            };
+
+            //Act
+            var exception = Assert.ThrowsAsync<ValidationException>(() => bookManager.AddAsync(newBook));
+            Assert.That(exception.Message, Is.EqualTo("Book is invalid."));
+
+            var bookInDb = await dbContext.Books.FirstOrDefaultAsync(b => b.ISBN == newBook.ISBN);
+            Assert.Null(bookInDb);
+        }
 
         [Test]
         public async Task DeleteBookAsync_WithValidISBN_ShouldRemoveBookFromDb()
