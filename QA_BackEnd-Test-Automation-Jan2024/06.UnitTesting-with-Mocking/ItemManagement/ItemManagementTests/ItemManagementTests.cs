@@ -113,7 +113,7 @@ namespace ItemManagement.Tests
         }
 
         [Test]
-        public void UpdateItem_ShouldNotUpdateItem_ifItemDoesNotExist()
+        public void UpdateItem_ShouldNotUpdateItem_IfItemDoesNotExist()
         {
             //Arrange
             var nonExistingId = 1;
@@ -130,7 +130,7 @@ namespace ItemManagement.Tests
         }
 
         [Test]
-        public void UpdateItem_ShouldThrowException_ifItemNameIsInvalid()
+        public void UpdateItem_ShouldThrowException_IfItemNameIsInvalid()
         {
             //Arrange
             var item = new Item { Id = 1, Name = "some name" };
@@ -148,25 +148,69 @@ namespace ItemManagement.Tests
         [Test]
         public void DeleteItem_ShouldCallDeleteItemOnRepository()
         {
+            //Arrange
+            int id = 5;
+            //_mockItemRepository.Setup(x => x.DeleteItem(id));
+
+            //Act
+            _itemService.DeleteItem(id);
+
+            //Assert
+            _mockItemRepository.Verify(x => x.DeleteItem(id), Times.Once);
 
         }
 
         [Test]
         public void ValidateItemName_WhenNameIsValid_ShouldReturnTrue()
         {
+            //Arrange
+            var validName = "item name";
 
+            //Act
+            var result = _itemService.ValidateItemName(validName);
+
+            //Assert
+            Assert.True(result);
         }
 
         [Test]
         public void ValidateItemName_WhenNameIsTooLong_ShouldReturnFalse()
         {
+            //Arrange
+            var invalidName = "nameWith11c";
 
+            //Act
+            var result = _itemService.ValidateItemName(invalidName);
+
+            //Assert
+            Assert.False(result);
         }
 
-        [Test]
-        public void ValidateItemName_WhenNameIsEmpty_ShouldReturnFalse()
+        [TestCase("")]
+        //[TestCase("  ")]
+        [TestCase(null)]
+        public void ValidateItemName_WhenNameIsEmpty_ShouldReturnFalse(string invalidName)
         {
+            //Act
+            var result = _itemService.ValidateItemName(invalidName);
 
+            //Assert
+            Assert.False(result);
+        }
+
+        //Alternative for validation tests
+        [TestCase("", false)]
+        [TestCase(null, false)]
+        [TestCase("looooooonnnnggggg", false)]
+        [TestCase("A", true)]
+        [TestCase("some item", true)]
+        public void ValidateItemName_ShouldReturnCorrectValidation(string name, bool isValid)
+        {
+            //Act
+            var result = _itemService.ValidateItemName(name);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(isValid));
         }
     }
 }
