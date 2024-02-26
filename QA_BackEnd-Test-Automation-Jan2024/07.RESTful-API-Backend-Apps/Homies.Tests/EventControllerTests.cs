@@ -37,6 +37,7 @@ namespace Homies.Tests
             var result = await _controller.Add();
 
             // Assert
+            //assert that the result is of the expected type
             Assert.IsInstanceOf<ViewResult>(result);
         }
 
@@ -44,18 +45,31 @@ namespace Homies.Tests
         public async Task Join_UserNotJoined_ReturnsRedirectToActionResult()
         {
             // Arrange
+            //define ID of the event to be used in the test
             int eventId = 1;
+
+            //setup the mock behaviour for the event service
+            //assume the user is not already joined to the event
             _mockEventService.Setup(s => s.IsUserJoinedEventAsync(eventId, It.IsAny<string>()))
                              .ReturnsAsync(false);
+
+            //setup the mock behaviour for joining the event
+            //assume joining the event is successful
             _mockEventService.Setup(s => s.JoinEventAsync(eventId, It.IsAny<string>()))
                              .ReturnsAsync(true);
 
             // Act
+            //call the controller method to join the event
             var result = await _controller.Join(eventId);
 
             // Assert
+            //assert that the result returned is of the expected type
             Assert.IsInstanceOf<RedirectToActionResult>(result);
+
+            //convert the result to RedirectToActionResult for further assertions
             var redirectResult = result as RedirectToActionResult;
+
+            //assert that the action name and controller name in the redirect result are as expected
             Assert.AreEqual("Joined", redirectResult.ActionName);
             Assert.AreEqual("Event", redirectResult.ControllerName);
         }
@@ -64,16 +78,26 @@ namespace Homies.Tests
         public async Task Join_UserAlreadyJoined_ReturnsRedirectToActionResult()
         {
             // Arrange
+            //define ID of the event to be used in the test
             int eventId = 1;
+
+            //setup the mock behaviour for the event service
+            //assume the user is already joined to the event
             _mockEventService.Setup(s => s.IsUserJoinedEventAsync(eventId, It.IsAny<string>()))
                              .ReturnsAsync(true);
 
             // Act
+            //call the controller method to join the event
             var result = await _controller.Join(eventId);
 
             // Assert
+            //assert that the result returned is of the expected type
             Assert.IsInstanceOf<RedirectToActionResult>(result);
+
+            //convert the result to RedirectToActionResult for further assertions
             var redirectResult = result as RedirectToActionResult;
+
+            //assert that the action name and controller name in the redirect result are as expected
             Assert.AreEqual("Joined", redirectResult.ActionName);
             Assert.AreEqual("Event", redirectResult.ControllerName);
         }
