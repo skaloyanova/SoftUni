@@ -331,7 +331,7 @@ namespace ProductConsoleAPI.IntegrationTests.NUnit
         [TestCase("")]
         [TestCase("   ")]
         [TestCase(null)]
-        public async Task SearchByOriginCountryAsync_WithWithNullOrWhiteSpaceOriginCountry_ShouldThrowKeyArgumentException(string country)
+        public async Task SearchByOriginCountryAsync_WithNullOrWhiteSpaceOriginCountry_ShouldThrowArgumentException(string country)
         {
             // Act and Assert
             var ex = Assert.ThrowsAsync<ArgumentException>(() => productsManager.SearchByOriginCountry(country));
