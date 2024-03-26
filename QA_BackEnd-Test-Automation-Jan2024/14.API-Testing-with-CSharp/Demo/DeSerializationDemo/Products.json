@@ -1,0 +1,12 @@
+﻿{
+  "productVariables": [
+    {
+      "type": "Vegetable",
+      "products": [ "Tomato", "Cucumber" ]
+    },
+    {
+      "type": "Fruit",
+      "products": [ "Apple", "Banana" ]
+    }
+  ]
+}
