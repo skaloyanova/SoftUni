@@ -405,3 +405,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/QA_BackEnd-Test-Automation-Jan2024/15.API-Testing-with-Postman/newman
