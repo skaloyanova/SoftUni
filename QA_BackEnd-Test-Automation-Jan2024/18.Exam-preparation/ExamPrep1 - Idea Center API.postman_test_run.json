@@ -1,0 +1,237 @@
+{
+	"id": "ccb57122-a164-40d2-839e-50c2750f7428",
+	"name": "ExamPrep1 - Idea Center API",
+	"timestamp": "2024-04-17T11:40:29.280Z",
+	"collection_id": "11249562-9c3c9987-ad14-4f70-92e6-2d50c0fba32d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-04-17T11:40:27.609Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "34803189-5e13-4784-9339-fb22d7c7ef43",
+			"name": "User Authentication",
+			"url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/User/Authentication",
+			"time": 151,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body should include attributes 'email', 'password' and 'accessToken' and are not empty": true,
+				"Access token is not null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should include attributes 'email', 'password' and 'accessToken' and are not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Access token is not null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				151
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body should include attributes 'email', 'password' and 'accessToken' and are not empty": true,
+					"Access token is not null": true
+				}
+			]
+		},
+		{
+			"id": "fe950b8e-81bc-4a10-b69d-b129c2a1916d",
+			"name": "Create Idea",
+			"url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Create",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body should include message 'Successfully created!'": true,
+				"Response body should include correct title for the created idea": true,
+				"Response body should include correct description for the created idea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should include message 'Successfully created!'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should include correct title for the created idea": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should include correct description for the created idea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body should include message 'Successfully created!'": true,
+					"Response body should include correct title for the created idea": true,
+					"Response body should include correct description for the created idea": true
+				}
+			]
+		},
+		{
+			"id": "da4a6a94-070d-431e-9e78-592b15f5b0b7",
+			"name": "List All Ideas",
+			"url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/All",
+			"time": 61,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should be an array and should contain at least one item": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should be an array and should contain at least one item": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should be an array and should contain at least one item": true
+				}
+			]
+		},
+		{
+			"id": "94a9b41c-bd60-4ba6-b7b3-539af4ce2bbe",
+			"name": "Edit Idea",
+			"url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Edit?ideaId=5ba8878b-b0ad-4afb-2e24-08dc5a3f474d",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body should include message 'Edited successfully'": true,
+				"Title in response body should matches the new title provided": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should include message 'Edited successfully'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Title in response body should matches the new title provided": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body should include message 'Edited successfully'": true,
+					"Title in response body should matches the new title provided": true
+				}
+			]
+		},
+		{
+			"id": "a5dbf7ee-4dad-47c0-9d3b-431448c6f824",
+			"name": "Delete Idea",
+			"url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Delete?ideaId=5ba8878b-b0ad-4afb-2e24-08dc5a3f474d",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Type of the response body should be string": true,
+				"Response should include text 'The idea is deleted!'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Type of the response body should be string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should include text 'The idea is deleted!'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Type of the response body should be string": true,
+					"Response should include text 'The idea is deleted!'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 410,
+	"collection": {
+		"requests": [
+			{
+				"id": "34803189-5e13-4784-9339-fb22d7c7ef43",
+				"method": "POST"
+			},
+			{
+				"id": "fe950b8e-81bc-4a10-b69d-b129c2a1916d",
+				"method": "POST"
+			},
+			{
+				"id": "da4a6a94-070d-431e-9e78-592b15f5b0b7",
+				"method": "GET"
+			},
+			{
+				"id": "94a9b41c-bd60-4ba6-b7b3-539af4ce2bbe",
+				"method": "PUT"
+			},
+			{
+				"id": "a5dbf7ee-4dad-47c0-9d3b-431448c6f824",
+				"method": "DELETE"
+			}
+		]
+	}
+}
