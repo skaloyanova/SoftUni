@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0 5%;
+}
+
+h1,
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.mainHeader p {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.mainHeader ul {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mainHeader li {
+    margin: 10px 20px 0 0;
+    list-style: none;
+}
+
+.mainHeader a {
+    color: rgb(3, 119, 3);
+    text-decoration: none;
+    vertical-align: top;
+}
+
+main {
+    display: inline-block;
+    width: 75%;
+}
+
+aside {
+    display: inline-block;
+    width: 10%;
+    margin: 0 50px;
+}
+
+aside section ul li a {
+    color: rgb(8, 143, 8);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main,
+aside {
+    vertical-align: top;
+}
+
+.articleOne,
+.articleTwo,
+.articleThree p {
+    letter-spacing: 0.7px;
+    line-height: 1.3;
+}
+
+.articleOne img {
+    float: right;
+    margin: 0 20px 20px 20px;
+}
+
+.articleTwo div {
+    display: flex;
+    width: 100%;
+}
+
+.articleTwo section div p {
+    display: inline-block;
+    width: 50%;
+}
+
+.articleTwo section div blockquote {
+    width: 50%;
+    display: inline-block;
+    border-left: 4px solid rgb(167, 167, 167);
+    padding-left: 30px;
+    color: grey;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+.articleTwo section div blockquote span {
+    display: block;
+    text-align: right;
+}
+
+
+.articleThree img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+img {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    border: 3px solid black;
+}

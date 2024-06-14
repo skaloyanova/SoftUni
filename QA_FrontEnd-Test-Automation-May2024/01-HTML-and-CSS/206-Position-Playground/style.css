@@ -1,0 +1,36 @@
+@import url(https://use.fontawesome.com/releases/v6.5.2/css/all.css);
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.viewport1, .viewport2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewport1 {
+    background: linear-gradient(to right, rgb(9, 107, 163), rgb(39, 206, 164));
+}
+
+.viewport2 {
+    background: linear-gradient(to right, rgb(177, 31, 87), rgb(216, 151, 29));
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+}

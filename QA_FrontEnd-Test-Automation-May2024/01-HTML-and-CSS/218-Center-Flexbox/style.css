@@ -1,0 +1,28 @@
+body {
+    background: rgb(238, 238, 238);
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    flex-basis: 30%;
+    padding: 12px 10px;
+    box-shadow: 0 0 2rem 0.5rem rgba(0,0,0,0.2);
+    border-radius: 5px;
+    line-height: 1.4;
+}
+
+.card h4 {
+    margin: auto 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.card p {
+    margin-top: 5px;
+}

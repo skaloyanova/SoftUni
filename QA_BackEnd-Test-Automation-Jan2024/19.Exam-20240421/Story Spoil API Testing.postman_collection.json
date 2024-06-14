@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "0e36acbc-2875-472a-8931-b999764e1f7e",
+		"name": "Story Spoil API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11249562"
+	},
+	"item": [
+		{
+			"name": "Login and Authentication",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body should include attributes 'username', 'password' and 'accessToken'\", () => {\r",
+							"    pm.expect(jsonResponse).to.have.property(\"username\").and.not.to.be.empty;\r",
+							"    pm.expect(jsonResponse).to.have.property(\"password\").and.not.to.be.empty;\r",
+							"    pm.expect(jsonResponse).to.have.property(\"accessToken\").and.not.to.be.empty;\r",
+							"});\r",
+							"\r",
+							"//Set accessToken as collection variable\r",
+							"pm.collectionVariables.set(\"token\", jsonResponse.accessToken);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userName\": \"userStanislava\", \r\n\"password\": \"parola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/User/Authentication",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Story Spoiler",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 201\", () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain success message\", () => {\r",
+							"    pm.expect(jsonResponse.msg).to.eqls(\"Successfully created!\");\r",
+							"});\r",
+							"\r",
+							"//Set storyId as collection variable\r",
+							"pm.collectionVariables.set(\"storyId\", jsonResponse.storyId)"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const storyArray = ['City', 'Animal', 'Music', 'Movie', 'Book'];\r",
+							"const randomIndex = Math.floor(Math.random() * storyArray.length);\r",
+							"const randomStoryPrefix = storyArray[randomIndex];\r",
+							"const randomStorySuffix = Math.floor(Math.random() * 1000)\r",
+							"\r",
+							"const randomStoryTitle = randomStoryPrefix + \"-\" + randomStorySuffix;\r",
+							"\r",
+							"pm.collectionVariables.set(\"randomTitle\", randomStoryTitle);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"{{randomTitle}}\", \r\n\"description\": \"Description for {{randomTitle}}\", \r\n\"url\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/Story/Create",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"Story",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Story Spoiler by Title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should be a non-empty array\", () => {\r",
+							"    pm.expect(jsonResponse).to.be.an('array').and.to.have.lengthOf.at.least(1);\r",
+							"});\r",
+							"\r",
+							"const storyTitle = pm.collectionVariables.get(\"randomTitle\");\r",
+							"const storyTitleList = jsonResponse.map(s => s.title);\r",
+							"\r",
+							"pm.test(`Response should contain story with title '${storyTitle}'`, () => {\r",
+							"    pm.expect(storyTitleList).to.include(storyTitle);\r",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/Story/Search?keyword={{randomTitle}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"Story",
+						"Search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "{{randomTitle}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Story Spoiler",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain success message\", () => {\r",
+							"    pm.expect(jsonResponse.msg).to.eqls(\"Successfully edited\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"{{randomTitle}} - EDITED\", \r\n\"description\": \"Description edited\", \r\n\"url\": \"\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/Story/Edit/{{storyId}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"Story",
+						"Edit",
+						"{{storyId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Story Spoiler",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonResponse = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain success message\", () => {\r",
+							"    pm.expect(jsonResponse.msg).to.eqls(\"Deleted successfully!\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/Story/Delete/{{storyId}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"Story",
+						"Delete",
+						"{{storyId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://d5wfqm7y6yb3q.cloudfront.net",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "randomTitle",
+			"value": ""
+		},
+		{
+			"key": "storyId",
+			"value": ""
+		}
+	]
+}

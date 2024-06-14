@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #EEE;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+}
+
+header, main, aside, footer {
+    box-shadow: 0 0 1rem 0.1rem rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    background-color: #FFF;
+    color: #000;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+header {
+    flex-basis: 100%;
+    min-height: 10vh;
+}
+
+main {
+    flex: 8 1 40rem;
+    min-height: 30vh;
+}
+
+aside {
+    flex: 2 1 20rem;
+}
+
+footer {
+    flex-basis: 100%;
+}

@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 50px 70px;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 750;
+}
+
+ul {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+li {
+    display: inline-block;
+    margin: 14px;
+}
+
+a {
+    color: rgb(58, 184, 58);
+    text-decoration: none;
+}
+
+main h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+main p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    line-height: 1.65;
+}
