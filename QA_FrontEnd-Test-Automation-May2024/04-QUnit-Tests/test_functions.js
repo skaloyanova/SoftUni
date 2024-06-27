@@ -17,10 +17,10 @@ function isPalindrome(word) {
     if (word === '') {
         return false;
     }
-    let convertedWord = word.toLowerCase().replaceAll(/[\W+_]/g, '');
-    let reversedWord = Array.from(convertedWord).reverse().join('');
+    let convertedWord = word.toLowerCase().replaceAll(/[\W_]/g, '');
+    let reversedWord = convertedWord.split('').reverse().join('');
 
-    return word === reversedWord;
+    return convertedWord === reversedWord;
 }
 
 function fibonacciSequence(n) {
@@ -76,7 +76,7 @@ function nthPrime(n) {
 function pascalTriangle(rows) {
     let triangle = [];
 
-    for (let i = 0; i <= rows; i++) {
+    for (let i = 0; i < rows; i++) {
         triangle[i] = [];
         triangle[i][0] = 1;
 
