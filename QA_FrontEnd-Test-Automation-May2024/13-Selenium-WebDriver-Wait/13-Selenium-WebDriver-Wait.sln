@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-SeleniumWaits", "01-SeleniumWaits\01-SeleniumWaits.csproj", "{B4BB4D9F-1C35-4B16-9EBE-F55ACDC8448C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Search-With-ImplicitWait", "02-Search-With-ImplicitWait\02-Search-With-ImplicitWait.csproj", "{4375BBEC-FD2D-400E-AF38-5A38A062785E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Search-With-ExplicitWait", "03-Search-With-ExplicitWait\03-Search-With-ExplicitWait.csproj", "{5B820259-4C9D-4E67-86CA-4D87EF64C969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Working-With-Windows", "04-Working-With-Windows\04-Working-With-Windows.csproj", "{B45F259C-3187-4E86-B2AF-A2B05D34076B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Working-With-Alerts", "05-Working-With-Alerts\05-Working-With-Alerts.csproj", "{7BCEB8A1-D126-4483-8025-04626730B2B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Working-With-iFrames", "06-Working-With-iFrames\06-Working-With-iFrames.csproj", "{3B789CEA-AAE1-4E3A-93D0-52AD639A251D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4BB4D9F-1C35-4B16-9EBE-F55ACDC8448C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB4D9F-1C35-4B16-9EBE-F55ACDC8448C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB4D9F-1C35-4B16-9EBE-F55ACDC8448C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB4D9F-1C35-4B16-9EBE-F55ACDC8448C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4375BBEC-FD2D-400E-AF38-5A38A062785E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4375BBEC-FD2D-400E-AF38-5A38A062785E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4375BBEC-FD2D-400E-AF38-5A38A062785E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4375BBEC-FD2D-400E-AF38-5A38A062785E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B820259-4C9D-4E67-86CA-4D87EF64C969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B820259-4C9D-4E67-86CA-4D87EF64C969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B820259-4C9D-4E67-86CA-4D87EF64C969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B820259-4C9D-4E67-86CA-4D87EF64C969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45F259C-3187-4E86-B2AF-A2B05D34076B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45F259C-3187-4E86-B2AF-A2B05D34076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45F259C-3187-4E86-B2AF-A2B05D34076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45F259C-3187-4E86-B2AF-A2B05D34076B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCEB8A1-D126-4483-8025-04626730B2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCEB8A1-D126-4483-8025-04626730B2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCEB8A1-D126-4483-8025-04626730B2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCEB8A1-D126-4483-8025-04626730B2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B789CEA-AAE1-4E3A-93D0-52AD639A251D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B789CEA-AAE1-4E3A-93D0-52AD639A251D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B789CEA-AAE1-4E3A-93D0-52AD639A251D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B789CEA-AAE1-4E3A-93D0-52AD639A251D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDEC1171-80A3-40F6-B190-DA477C58F9D3}
+	EndGlobalSection
+EndGlobal

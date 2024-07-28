@@ -1,0 +1,6 @@
+* original window handle: B429551F9D0581F4101D3957FC5A3575
+* new window opened; handles list: B429551F9D0581F4101D3957FC5A3575, 8761989A008C972F3A6DC6FF2B9149C3
+* current handle is: B429551F9D0581F4101D3957FC5A3575
+* switched to new window; current handle is: 8761989A008C972F3A6DC6FF2B9149C3
+* new window closed; handles list: B429551F9D0581F4101D3957FC5A3575
+* switched to original window; current handle is: B429551F9D0581F4101D3957FC5A3575
