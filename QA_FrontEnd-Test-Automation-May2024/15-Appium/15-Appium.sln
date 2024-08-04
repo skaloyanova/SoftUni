@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-SummatorApp", "01-SummatorApp\01-SummatorApp.csproj", "{8348D4DF-4E03-43D9-9070-3D268A9FC73B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-ColorNoteApp", "02-ColorNoteApp\02-ColorNoteApp.csproj", "{69C46EA3-0083-4C5C-A663-7133E5D3E045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8348D4DF-4E03-43D9-9070-3D268A9FC73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8348D4DF-4E03-43D9-9070-3D268A9FC73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8348D4DF-4E03-43D9-9070-3D268A9FC73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8348D4DF-4E03-43D9-9070-3D268A9FC73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C46EA3-0083-4C5C-A663-7133E5D3E045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C46EA3-0083-4C5C-A663-7133E5D3E045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C46EA3-0083-4C5C-A663-7133E5D3E045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C46EA3-0083-4C5C-A663-7133E5D3E045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2915A262-FCF6-4285-88B5-85621F8975DA}
+	EndGlobalSection
+EndGlobal
