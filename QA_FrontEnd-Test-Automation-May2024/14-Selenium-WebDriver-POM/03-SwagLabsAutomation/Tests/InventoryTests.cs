@@ -1,35 +1,49 @@
-﻿using _03_SwagLabsAutomation.Pages;
-
-namespace _03_SwagLabsAutomation.Tests;
+﻿namespace _03_SwagLabsAutomation.Tests;
 
 public class InventoryTests : BaseTest
 {
+    [SetUp]
+    public void Setup()
+    {
+        Login("standard_user", "secret_sauce");
+    }
+
+    [TearDown]
+    public void Teardown()
+    {
+        hiddenMenuPage.ClickResetAppStateLink();
+    }
+
+
     [Test]
     public void TestInventoryDisplay()
     {
-        Login("standard_user", "secret_sauce");
-        var inventoryPage = new InventoryPage(driver);
-        Assert.That(inventoryPage.IsInventoryDisplayed, Is.True);
+        Assert.That(inventoryPage.IsInventoryDisplayed(), Is.True, "Inventory page has no items displayed");
     }
 
+    [Test]
     public void TestAddToCartByIndex()
     {
-        Login("standard_user", "secret_sauce");
-        var inventoryPage = new InventoryPage(driver);
-        inventoryPage.AddToCartByIndex(1);
+        inventoryPage.AddToCartByIndex(4);
+        inventoryPage.ClickCartLink();
+        Assert.That(cartPage.IsCartItemDisplayed(), Is.True, "Cart is empty");
+        Assert.That(cartPage.IsProductInCart("Sauce Labs Fleece Jacket"), "Product is missing in the cart");
     }
 
+    [Test]
     public void TestAddToCartByName()
     {
-        Login("standard_user", "secret_sauce");
-        var inventoryPage = new InventoryPage(driver);
-        inventoryPage.AddToCartByName("Sauce Labs Bike Light");
+        string productName = "Sauce Labs Bike Light";
+        
+        inventoryPage.AddToCartByName(productName);
+        inventoryPage.ClickCartLink();
+        Assert.That(cartPage.IsCartItemDisplayed(), Is.True, "Cart is empty");
+        Assert.That(cartPage.IsProductInCart(productName), "Product is missing in the cart");
     }
 
+    [Test]
     public void TestPageTitle()
     {
-        Login("standard_user", "secret_sauce");
-        var inventoryPage = new InventoryPage(driver);
         Assert.That(inventoryPage.IsPageLoaded(), Is.True);
     }
 }

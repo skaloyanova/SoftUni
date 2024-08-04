@@ -8,9 +8,8 @@ public class CheckoutPage : BasePage
     private readonly By lastNameField = By.XPath("//form//div[@class='checkout_info']//input[@id='last-name']");
     private readonly By postalCodeField = By.XPath("//form//div[@class='checkout_info']//input[@id='postal-code']");
     private readonly By continueButton = By.XPath("//input[@id='continue']");
-    private readonly By finishButton = By.XPath("//input[@id='finish']");
-    private readonly By completeHeader = By.ClassName(".complete-header");
-    private readonly By pageHeader = By.ClassName(".title");
+    private readonly By finishButton = By.XPath("//button[@id='finish']");
+    private readonly By completeHeader = By.ClassName("complete-header");
 
     public CheckoutPage(IWebDriver driver) : base(driver)
     {
@@ -41,9 +40,14 @@ public class CheckoutPage : BasePage
         Click(finishButton);
     }
 
-    public bool IsPageLoaded()
+    public bool IsPageLoadedFirstScreen()
     {
-        return driver.Url.Contains("checkout-step-one.html") || driver.Url.Contains("checkout-step-two.html");
+        return driver.Url.Contains("checkout-step-one.html");
+    }
+
+    public bool IsPageLoadedSecondScreen()
+    {
+        return driver.Url.Contains("checkout-step-two.html");
     }
 
     public bool IsCheckoutComplete()
