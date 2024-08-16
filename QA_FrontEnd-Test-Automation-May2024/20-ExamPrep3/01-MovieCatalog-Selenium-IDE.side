@@ -1,0 +1,355 @@
+{
+  "id": "c705c4ce-e175-45e3-ab73-95c18e3d29bc",
+  "version": "2.0",
+  "name": "01-MovieCatalog-Selenium-IDE",
+  "url": "http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com",
+  "tests": [{
+    "id": "a2a16dfb-2d08-4125-a4dc-ec95f5fd72de",
+    "name": "01-LandingPageTest(NonLoggedUser)",
+    "commands": [{
+      "id": "5b570aab-9395-4da9-bf87-97d1de4d85d2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c20670bf-33a2-4abf-8ff5-0fea050ff5e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fc5c01b-4389-43eb-ab63-72ea866c47e2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Movie Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba82c07c-5e47-4576-b16c-a86d73e7337c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'About Us')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b69e7993-1340-4f57-bbf1-c8daa76a461c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Our Services')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c6150f9-a4c8-4e3c-9e83-2ad090490b76",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Login')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2774c7-c583-4f78-8b86-edf173c98723",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Register')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b532664-56c1-4e31-8c97-044972246c1b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Copyrights')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f97f1eeb-34b2-490b-aceb-b54404afddb9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4b233f9e-1594-4f78-a3bf-2166f9bbca79",
+    "name": "02-LoginTest",
+    "commands": [{
+      "id": "5023b05a-0650-4af7-b109-816e9c4dd23c",
+      "comment": "",
+      "command": "open",
+      "target": "/User/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "776c721a-3b20-48f5-9a97-303a3138c7a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec223bbf-8aaf-4b7c-ab88-0232acc93150",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='Email']",
+      "targets": [],
+      "value": "testuser100@example.com"
+    }, {
+      "id": "ba6fb438-ce88-4e95-85e7-28e1824e29a5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='Password']",
+      "targets": [],
+      "value": "123123"
+    }, {
+      "id": "f0f99cca-6db7-4491-9412-0ad3ef348ae7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Login']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f995493f-f2ac-4a3b-a116-5bcb164a155c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='subheading mb-5']",
+      "targets": [],
+      "value": "WELCOME, TESTUSER100!"
+    }, {
+      "id": "831e5b9a-63df-4040-a220-44ca6cf921a2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Add Movie')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e04fff6-1fa8-4db8-80e3-bf49aae96cfc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'All Movies')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91f76dee-158d-4368-ad04-18e939ef781a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Watched Movies')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1096aa44-f0ff-447f-a56c-791b40eadf05",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Unwatched Movies')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "500a5e49-d1e0-47ff-a15a-952493cc1e82",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Logout']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26acc994-a4f3-4645-806a-256f5f6ef116",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='subheading mb-5']",
+      "targets": [],
+      "value": "YOUR PERSONALIZED MOVIE SANCTUARY!"
+    }, {
+      "id": "2c2e5391-be56-4b2f-b2be-1b9ca3691a30",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "61d91770-dc5b-4ca5-964b-3f17f7e065b4",
+    "name": "03-EditProfileTest",
+    "commands": [{
+      "id": "3e65d1f8-be7f-4584-9ac0-639bfb1fe003",
+      "comment": "",
+      "command": "open",
+      "target": "/User/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7edb9816-f108-4429-b245-661bcf49cab7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "194d4a21-e168-45cb-8fd9-f470095af403",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='Email']",
+      "targets": [],
+      "value": "testuser100@example.com"
+    }, {
+      "id": "1ef40b89-5661-4354-97e4-ea7361f9abbf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='Password']",
+      "targets": [],
+      "value": "123123"
+    }, {
+      "id": "0e71f4d7-305b-4336-aec6-3a243a47d63d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Login']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a34a3cd-5838-4188-8434-e7ca05877fe0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='subheading mb-5']",
+      "targets": [],
+      "value": "WELCOME, TESTUSER100!"
+    }, {
+      "id": "925a91ff-8b4a-4dea-b482-8e668585f570",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//nav[@id=\"sideNav\"]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32607f0c-5bf5-4691-85ac-46840d2c1681",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//body[@id='page-top']/div[3]/section/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Profile/Edit')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1017bce2-0284-4ae4-8af0-447cec0fd29b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='FirstName']",
+      "targets": [],
+      "value": "Hali"
+    }, {
+      "id": "14f05b95-bccb-4494-b9f9-d1c52b7accc4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='LastName']",
+      "targets": [],
+      "value": "Fax"
+    }, {
+      "id": "7cb4f3ce-6ab9-4186-898a-09d18541a99d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Edit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c36fa52-d483-4527-a924-4109b232fb44",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='card']//h6",
+      "targets": [],
+      "value": "HALI FAX"
+    }, {
+      "id": "77ce7dc2-b300-4b79-bbfa-631b2d0ae251",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[text()='Logout']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02af18d2-dd1c-44e0-b103-9a2a53b1521c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Login')]",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Services')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#services')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9995d975-1d9e-49f2-b02d-45519ebabeb6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d91e88a5-b502-475d-a3b3-84eecd836382",
+    "name": "UserManagementTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a2a16dfb-2d08-4125-a4dc-ec95f5fd72de", "4b233f9e-1594-4f78-a3bf-2166f9bbca79", "61d91770-dc5b-4ca5-964b-3f17f7e065b4"]
+  }],
+  "urls": ["http://moviecatalog-env.eba-ubyppecf.eu-north-1.elasticbeanstalk.com/"],
+  "plugins": []
+}
